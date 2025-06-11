@@ -103,3 +103,9 @@ nmap -sV -Pn -p 25565 $(terraform output -raw minecraft_server_ip)
 
 The server is configured to restart automatically on instance reboot (via systemd enable)
 It is set to shut down cleanly with ExecStop=/bin/kill -SIGINT $MAINPID, ensuring the world is saved safely
+
+## References
+    1. Terraform AWS Provider
+    2. Ansible Documentation
+    3. Minecraft Server JAR
+    4. Systemd Services
