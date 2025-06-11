@@ -48,23 +48,23 @@ CS312-Project2/
 ├── ansible/
 │   ├── inventory.ini
 │   └── minecraft.yml
-└── labwk6key.pem (2 levels up)
- </pre>
+└── labwk6key.pem (2 levels up) </pre>
 
 Infrastructure Pipeline Diagram
 
 Terraform (IaC)
+<pre>
    ┗️ Provisions AWS:
       - VPC + Subnet
       - Security Group
-      - EC2 Instance (Ubuntu)
-
+      - EC2 Instance (Ubuntu) </pre>
+<pre>
 Ansible (Provisioner)
    ┗️ Connects to EC2:
       - Installs Java
       - Downloads Minecraft server
       - Accepts EULA
-      - Creates systemd service
+      - Creates systemd service </pre>
 
 ## Commands to Run
 
