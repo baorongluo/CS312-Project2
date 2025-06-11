@@ -35,7 +35,21 @@ Ensure the key has correct permissions:
 
 ## Project Structure
 
-<pre> \`\`\` CS312-Project2/ ├── main.tf ├── variables.tf ├── outputs.tf ├── terraform.tfvars ├── modules/ │ ├── ec2/ │ ├── vpc/ │ └── security_group/ ├── ansible/ │ ├── inventory.ini │ └── minecraft.yml └── labwk6key.pem (2 levels up) \`\`\` </pre>
+<pre>
+CS312-Project2/
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── terraform.tfvars
+├── modules/
+│   ├── ec2/
+│   ├── vpc/
+│   └── security_group/
+├── ansible/
+│   ├── inventory.ini
+│   └── minecraft.yml
+└── labwk6key.pem (2 levels up)
+ </pre>
 
 Infrastructure Pipeline Diagram
 
