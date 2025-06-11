@@ -2,7 +2,7 @@
 
 ## Background
 
-This project fully automates the provisioning and configuration of a dedicated Minecraft Java Edition server on AWS. The goal is to build a hands free, repeatable infrastructure pipeline using the following technologies:
+This project fully automates the provisioning and configuration of a dedicated Minecraft Java Edition server on AWS. The goal is to build a hands free, repeatable infrastructure pipeline using the following technologies:             
     - Terraform for infrastructure provisioning (VPC, subnet, security group, EC2 instance)      
     - Ansible for server configuration (Java installation, Minecraft setup, systemd service)      
     - Nmap or Minecraft client to verify server connectivity      
@@ -105,7 +105,6 @@ The server is configured to restart automatically on instance reboot (via system
 It is set to shut down cleanly with ExecStop=/bin/kill -SIGINT $MAINPID, ensuring the world is saved safely
 
 ## References
-    
     1. Ansible Documentation: https://docs.ansible.com/         
     2. Minecraft Server JAR: https://www.minecraft.net/en-us/download/server       
     3. Terraform Docs: https://developer.hashicorp.com/terraform/docs        
