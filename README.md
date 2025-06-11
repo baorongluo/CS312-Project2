@@ -48,6 +48,7 @@ CS312-Project2/
 ├── ansible/
 │   ├── inventory.ini
 │   └── minecraft.yml
+├── update_inventory.sh   # Auto-generates inventory with current IP
 └── labwk6key.pem (2 levels up) </pre>
 
 Infrastructure Pipeline Diagram
@@ -65,6 +66,10 @@ Ansible (Provisioner)
       - Downloads Minecraft server
       - Accepts EULA
       - Creates systemd service </pre>
+      
+<pre>
+Shell Script (Automation)
+  ┗ Dynamically updates Ansible inventory with the new instance IP </pre>
 
 ## Commands to Run
 
@@ -79,10 +84,13 @@ terraform plan
 3. Apply and provision infrastructure
 terraform apply -auto-approve
 
-4. Run Ansible playbook to configure server
+4. Update Ansible inventory file automatically
+./update_inventory.sh
+
+5. Run Ansible playbook to configure server
 ansible-playbook -i ansible/inventory.ini ansible/minecraft.yml
 
-5. Verify Minecraft port
+6. Verify Minecraft port
 nmap -sV -Pn -p 25565 $(terraform output -raw minecraft_server_ip)
 
 ## Connect to the Minecraft Server
