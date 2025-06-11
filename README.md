@@ -106,8 +106,6 @@ It is set to shut down cleanly with ExecStop=/bin/kill -SIGINT $MAINPID, ensurin
 
 ## References
     
-    1. Ansible Documentation: https://docs.ansible.com/
-   
-    2. Minecraft Server JAR: https://www.minecraft.net/en-us/download/server
-
-    3. Terraform Docs: https://developer.hashicorp.com/terraform/docs
+    1. Ansible Documentation: https://docs.ansible.com/         
+    2. Minecraft Server JAR: https://www.minecraft.net/en-us/download/server       
+    3. Terraform Docs: https://developer.hashicorp.com/terraform/docs        
