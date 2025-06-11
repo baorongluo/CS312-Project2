@@ -3,10 +3,10 @@
 ## Background
 
 This project fully automates the provisioning and configuration of a dedicated Minecraft Java Edition server on AWS. The goal is to build a hands free, repeatable infrastructure pipeline using the following technologies:
-    - Terraform for infrastructure provisioning (VPC, subnet, security group, EC2 instance) \n
-    - Ansible for server configuration (Java installation, Minecraft setup, systemd service) \n
-    - Nmap or Minecraft client to verify server connectivity \n
-    - No AWS Console or SSH is used in the pipeline. Everything is automated and version-controlled \n
+    - Terraform for infrastructure provisioning (VPC, subnet, security group, EC2 instance)      
+    - Ansible for server configuration (Java installation, Minecraft setup, systemd service)      
+    - Nmap or Minecraft client to verify server connectivity      
+    - No AWS Console or SSH is used in the pipeline. Everything is automated and version-controlled      
 
 ## Requirements
 1. AWS
